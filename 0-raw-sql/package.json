@@ -1,0 +1,15 @@
+{
+  "name": "0-raw-sql",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Ryan M Harrison",
+  "license": "The Unlicense",
+  "scripts": {
+    "start": "node app.js",
+    "postgres": "docker run -p 5432:5432 -d -e POSTGRES_DB=demodb -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=admin postgres:9.6"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.8.0"
+  }
+}
