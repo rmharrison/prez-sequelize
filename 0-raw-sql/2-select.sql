@@ -1,1 +1,1 @@
-SELECT * FROM person;
+SELECT * FROM Person;

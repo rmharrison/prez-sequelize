@@ -17,7 +17,7 @@ client.connect((err) => {
  * rows = [ {}, ... ]
  */
 function getPeople(cb) {
-  client.query('SELECT * FROM person', (err, res) => {
+  client.query('SELECT * FROM Person', (err, res) => {
     if (err) {
       console.error('query error', err.stack)
       return cb(err, null)
