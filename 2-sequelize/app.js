@@ -4,8 +4,7 @@ const port = 3000
 
 var {getPeople} = require('./controller')
 
-app.get('/', (req, res) => res.send('Hello World!'))
-app.get('/people', (req, res) => {
+app.get('/', (req, res) => {
   getPeople((err, rows) => {
     if (err) return res.status(500).end()
     return res.json(rows)
