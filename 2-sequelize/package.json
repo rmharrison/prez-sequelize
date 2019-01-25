@@ -1,0 +1,19 @@
+{
+  "name": "2-sequelize",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "Ryan M Harrison",
+  "license": "The Unlicense",
+  "scripts": {
+    "start": "node app.js",
+    "postgres": "docker run -p 5432:5432 -d -e POSTGRES_DB=demodb -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=admin postgres:9.6"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.4.0"
+  }
+}
